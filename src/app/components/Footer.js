@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div class="f_info">
+            <div className={styles.f_info}>
                 <div>
                     <h3>INFORMATION</h3>
                     <p></p>
