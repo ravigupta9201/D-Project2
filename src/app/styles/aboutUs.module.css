@@ -5,3 +5,10 @@
     margin-bottom: 50px;
 }
 
+.img_section {
+    gap: 20px;
+    /* width: 100%; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    overflow: hidden;
+}

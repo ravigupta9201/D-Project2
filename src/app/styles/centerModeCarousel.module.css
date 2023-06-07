@@ -1,0 +1,42 @@
+.carouselContainer {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  
+  .slide img {
+    width: 13%;
+    height: auto;
+  }
+  
+  .dotsContainer {
+    display: flex;
+    justify-content: center;
+    /* margin-top: -30px; */
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 20px 5px;
+    cursor: pointer;
+  }
+  
+  .dot:hover {
+    background-color: black;
+  }
+  

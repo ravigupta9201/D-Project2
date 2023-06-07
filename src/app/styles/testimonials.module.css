@@ -1,0 +1,25 @@
+
+
+.testimonials_box{
+    width: 700px;
+    /* height: 400px; */
+    margin: 50px auto;
+    padding: 50px 50px;
+    background-color: #07639c;
+    color: white;
+    text-align: center;
+    position: relative;
+    box-shadow: 6px 8px 6px #204860;
+}
+
+.logo {
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left: 300px;
+}
+
+.testimonials_box .description{
+    padding-top: 20px;    
+}

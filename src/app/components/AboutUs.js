@@ -12,7 +12,7 @@ const AboutUs = () => {
     <>
       <Container fluid>
         <Row className={styles.container}>
-          <Col>
+          <Col lg={6}>
             <h2>Welcome to Dynamic Skills</h2>
             <p>
               Lorem ipsum dolor sit amt consectetur adipisicing elit. Dolores
@@ -32,8 +32,14 @@ const AboutUs = () => {
               </Button>
             </Link>
           </Col>
-          <Col>
-            <Image  src="/img (1).png"  alt="about-section image"  width={620}  height={150}  />
+          <Col lg={6} className={styles.img_section}>
+            <Row>
+              <Col sm={12}>
+              {/* className="img-fluid" */}
+              <Image src="/img (1).png"  alt="about-section image"  width={630}  height={150}  />
+              </Col>
+            </Row>
+            
 
             <Row>
               <Col sm={6}>

@@ -1,0 +1,182 @@
+
+.footer_container {
+    background-color: #07527B;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-image: url('/wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1340px;
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+}
+
+
+.f_about{
+
+    flex-basis: 50%;
+}
+
+.f_about img {
+    margin-bottom: 20px;
+    font-weight: 900;
+    padding: 0;
+}
+
+.f_about p {
+    letter-spacing: 0.05rem;
+    color: white;
+}
+
+.f_links {
+    flex-basis: 23%;
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+}
+
+.container li{
+    padding: 8px 0px;
+    list-style: none;
+}
+
+.container h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.f_info h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.wave_svg {
+    background-color: #07527B;
+   
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.wave_svg img {
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.footer_container a:hover{
+    color: #f48020;
+}
+
+
+
+/* Footer Styles */
+/* .footer_container {
+    background-color: #07527B;
+    color: white;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .f_about {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+  }
+  
+  .f_links {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+  }
+
+  .f_links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .f_links h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .f_links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .f_links li {
+    margin-bottom: 10px;
+  }
+  
+  .f_info {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+  }
+  
+  .f_info h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .f_info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .f_info address,
+  .f_info a {
+    display: block;
+    color: #333;
+    color: white;
+  }
+
+ 
+  
+  .wave_svg {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .wave_svg p {
+    margin-bottom: 10px;
+  } */
+  
+  /* Responsive Styles */
+  @media (max-width: 775px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .f_about,
+    .f_links,
+    .f_info {
+      flex-basis: 100%;
+    }
+  }
+  
+  /* Add more media queries and adjust styles as needed */
+  
