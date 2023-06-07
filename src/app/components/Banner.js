@@ -1,7 +1,9 @@
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Container from 'react-bootstrap/Container';
+// import Button from 'react-bootstrap/Button';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+import { Container, Button, Row, Col } from 'react-bootstrap';
+
 
 import styles from "../styles/banner.module.css"
 import Link from 'next/link';

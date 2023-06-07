@@ -1,7 +1,7 @@
-import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import {Container, Button, Row, Col} from "react-bootstrap";
+// import Button from "react-bootstrap/Button";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 
 import styles from "../styles/aboutUs.module.css";
 import Image from "next/image";
