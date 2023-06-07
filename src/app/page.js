@@ -6,7 +6,10 @@ import AboutUs from './components/AboutUs'
 import Package_Card from './components/Package_Card'
 import TrainingSlider from './components/TrainingSlider'
 import WhyDynamic_Card from './components/WhyDynamic_Card'
-import { Container } from 'react-bootstrap'
+// import { Container } from 'react-bootstrap'
+
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 
 import WhyDynamic_Slider from './components/WhyDynamic_Slider'
