@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import styles from "../styles/footer.module.css"
-import { Container } from "react-bootstrap"
+// import { Container } from "react-bootstrap"
 
 
 const Footer = () => {
@@ -48,7 +48,7 @@ const Footer = () => {
 
         <div className={styles.wave_svg}>
             <p>© Copyright 2022, Dynamicskills</p>
-            <Image src="/bottomstick.svg" alt="bottom stick" width={1520} height={10} />
+            <Image src="/bottomstick.svg" alt="bottom stick" width={1420} height={10} />
         </div>
       </footer>
 

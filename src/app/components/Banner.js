@@ -3,6 +3,7 @@
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 import { Container, Button, Row, Col } from 'react-bootstrap';
+// import 'bootstrap/dist/css/bootstrap.css';
 
 
 import styles from "../styles/banner.module.css"

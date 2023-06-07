@@ -8,7 +8,6 @@ import TrainingSlider from './components/TrainingSlider'
 import WhyDynamic_Card from './components/WhyDynamic_Card'
 // import { Container } from 'react-bootstrap'
 
-import 'bootstrap/dist/css/bootstrap.css';
 
 
 
