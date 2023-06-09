@@ -1,42 +1,62 @@
 .carouselContainer {
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto;
+    /* max-width: 700px; */
+    margin: 50px auto;
     overflow: hidden;
+
   }
   
   .carousel {
     display: flex;
+    text-align: center;
     transition: transform 0.3s ease;
   }
   
   .slide {
     flex: 0 0 100%;
     width: 100%;
+    padding: 20px 20px;
+
+    background-color:  #07639c;
+    color: white;
+    box-shadow: 6px 8px 6px #204860;
+
   }
 
   
   .slide img {
-    width: 13%;
+    width: 10%;
     height: auto;
+    border-radius: 50%;
   }
   
   .dotsContainer {
     display: flex;
     justify-content: center;
-    /* margin-top: -30px; */
+
   }
   
   .dot {
     width: 10px;
     height: 10px;
-    border-radius: 50%;
-    background-color: gray;
+    border-radius: 20%;
+    background-color: rgb(70, 62, 62);
     margin: 20px 5px;
     cursor: pointer;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-delay: 500mss;
   }
   
   .dot:hover {
-    background-color: black;
+    width: 30px;
+    height: 10px;
+    /* transform: scaleX(2); */
+    border-radius: 20%;
+    background-color: orange;
+    color: orange;
   }
   
+
+  /* @media (max) */

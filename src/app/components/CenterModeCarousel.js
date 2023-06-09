@@ -4,6 +4,7 @@ import React, { useRef } from 'react';
 // import Testimonials from './components/Testimonials'
 import Testimonials from './Testimonials';
 import styles from "../styles/centerModeCarousel.module.css"
+import { Container } from 'react-bootstrap';
 
 const CenterModeCarousel = ({ testimonials }) => {
 const carouselRef = useRef(null);
@@ -13,6 +14,7 @@ const carouselRef = useRef(null);
   };
 
   return (
+    <Container>
     <div className={styles.carouselContainer}>
       <div className={styles.carousel} ref={carouselRef}>
         {testimonials.map((testimonial, index) => (
@@ -33,7 +35,11 @@ const carouselRef = useRef(null);
         </div>
         
     </div>
+
+    </Container>
   );
 };
 
 export default CenterModeCarousel;
+
+

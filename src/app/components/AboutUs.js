@@ -12,7 +12,7 @@ const AboutUs = () => {
     <>
       <Container fluid>
         <Row className={styles.container}>
-          <Col lg={6}>
+          <Col lg={6} md={12} sm={12}>
             <h2>Welcome to Dynamic Skills</h2>
             <p>
               Lorem ipsum dolor sit amt consectetur adipisicing elit. Dolores
@@ -32,21 +32,21 @@ const AboutUs = () => {
               </Button>
             </Link>
           </Col>
-          <Col lg={6} className={styles.img_section}>
-            <Row>
-              <Col sm={12}>
+          <Col lg={6} md={12} sm={12} className={styles.img_section}>
+            <Row >
+              <Col>
               {/* className="img-fluid" */}
-              <Image src="/img (1).png"  alt="about-section image"  width={630}  height={150}  />
+              <Image className={styles.imageWrapper} src="/img (1).png"  alt="about-section image"  width={630}  height={150}  />
               </Col>
             </Row>
             
 
-            <Row>
-              <Col sm={6}>
-                <Image src="/img (2).png"  alt="about-section image2" width={300}  height={150}  />
+            <Row >
+              <Col>
+                <Image className={styles.imageWrapper}  src="/img (2).png"  alt="about-section image2" width={300}  height={150}  />
               </Col>
-              <Col sm={6}>
-                <Image src="/web-designing.jpg" alt="about-section image3" width={300} height={150} />
+              <Col>
+                <Image className={styles.imageWrapper} src="/web-designing.jpg" alt="about-section image3" width={300} height={150} />
               </Col>
             </Row>
           </Col>

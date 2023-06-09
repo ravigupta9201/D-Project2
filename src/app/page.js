@@ -14,6 +14,7 @@ import WhyDynamic_Card from './components/WhyDynamic_Card'
 import WhyDynamic_Slider from './components/WhyDynamic_Slider'
 import Footer from './components/Footer'
 import CenterModeCarousel from './components/CenterModeCarousel'
+import Testimonials from './components/Testimonials'
 
 
 
@@ -55,7 +56,9 @@ const page = () => {
         <WhyDynamic_Card />
       </Container> */}
 
-      <WhyDynamic_Slider  />
+      <WhyDynamic_Slider   />
+
+      {/* <Testimonials /> */}
 
       <CenterModeCarousel testimonials={testimonials} />
 

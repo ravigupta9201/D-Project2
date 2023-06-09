@@ -17,7 +17,7 @@ const TrainingSlider = () => {
 
     const settings = {
       dots: true,
-      dotsClass: "slick-dots slick-thumb",
+      // dotsClass: "slick-dots slick-thumb",
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -28,7 +28,7 @@ const TrainingSlider = () => {
       cssEase: "linear",
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1395,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -37,7 +37,7 @@ const TrainingSlider = () => {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 990,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -45,10 +45,11 @@ const TrainingSlider = () => {
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 760,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            initialSlide: 1
           }
         }
       ]
@@ -56,9 +57,9 @@ const TrainingSlider = () => {
 
   return (
     <Container >
-        <h2> Training </h2>
-        <p>Lorem ipsum dolor sit amt consectetur adipisicing elit. Dolores quia rerum natus voluptate voluptates odit ducimus consectetur voluptatem obcaecati, eligendi itaque quasi delectus at officiis quas porro unde aperiam ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia rerum natus voluptate voluptates.</p>
-        <Slider {...settings}>
+        <h2 style={{margin:"10px", color:"#034A74"}}> Training </h2>
+        <p style={{margin:"10px", }}>Lorem ipsum dolor sit amt consectetur adipisicing elit. Dolores quia rerum natus voluptate voluptates odit ducimus consectetur voluptatem obcaecati, eligendi itaque quasi delectus at officiis quas porro unde aperiam ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia rerum natus voluptate voluptates.</p>
+        <Slider className={styles.slick_prev} {...settings}>
           <div>
             <Package_Card imageUrl={"/slider (1).png"} />
           </div>

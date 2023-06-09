@@ -25,16 +25,16 @@ const WhyDynamic_Slider = () => {
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2,
               slidesToScroll: 1,
               infinite: true,
-              dots: true
+              // dots: true
             }
           },
           {
-            breakpoint: 700,
+            breakpoint: 550,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1,
               initialSlide: 2
             }
@@ -50,16 +50,17 @@ const WhyDynamic_Slider = () => {
       };
 
   return (
-    <Container className="my-5" style={{}}>
-        <Slider style={{display:"flex", justifyContent:"space between", gap:"20px" }} {...settings}>
+    <Container className="my-5">
+            <h2 style={{margin:"10px", color:"#034A74"}}>Why DynamicSkills</h2>
+        <Slider style={{display:"flex", justifyContent:"space-around", gap:"50px" }} {...settings}>
             <div>
-                <WhyDynamic_Card />
+                <WhyDynamic_Card heading={"Highly experience instructor"} />
             </div>
             <div>
-                <WhyDynamic_Card />
+                <WhyDynamic_Card heading={"Wel experience Lab"} />
             </div>
             <div>
-                <WhyDynamic_Card />
+                <WhyDynamic_Card heading={"Support after tranning"} />
             </div>
         </Slider>
     </Container>
