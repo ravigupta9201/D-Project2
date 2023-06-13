@@ -26,9 +26,14 @@
 }
 
 .imageWrapper {
+    width: auto;
+    height: auto;
+}
+
+.imageSize{
     width: 100%;
     margin-bottom: 1rem;
-  }
+}
 
 @media (max-width:600px){
     .container{

@@ -2,6 +2,8 @@ import { Card, Container } from "react-bootstrap";
 
 import Image from "next/image";
 import styles from "../styles/whyDynamicCard.module.css";
+import commonStyles from "@/app/styles/common_style.module.css"
+
 
 const WhyDynamic_Card = ({ heading }) => {
   return (
@@ -11,7 +13,7 @@ const WhyDynamic_Card = ({ heading }) => {
         <Container>
           <Card className={styles.card}>
             <div className={styles.heading}>
-              <Image src="/badge.svg" alt="my-logo" width={25} height={25} />
+              <Image src="/badge.svg" alt="my-logo" width={25} height={25} className={commonStyles.imageWrapper} />
               <h5>{heading}</h5>
             </div>
             <Card.Body>

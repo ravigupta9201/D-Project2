@@ -2,6 +2,7 @@ import {Card, Container} from 'react-bootstrap';
 
 import Image from 'next/image';
 import styles from "../styles/packageCard.module.css"
+import commonStyles from "@/app/styles/common_style.module.css"
 import Link from 'next/link';
 
 const Package_Card = ({imageUrl}) => {
@@ -17,7 +18,7 @@ const Package_Card = ({imageUrl}) => {
           <div style={{ display:"flex", alignItems:"center", gap:"5px" }}
 >
             <Link href="/training">Learn More</Link>
-            <Image src="/dbarrow.svg" alt='arrow' width={10} height={10} />
+            <Image src="/dbarrow.svg" alt='arrow' width={10} height={10} className={commonStyles.imageWrapper} />
           </div>
         </div>
         

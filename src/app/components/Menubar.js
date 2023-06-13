@@ -1,8 +1,8 @@
 " use client ";
 
 import { Container, Nav, Navbar, NavDropdown, Button } from "react-bootstrap";
-import styles from "../styles/common_style.module.css";
 import menubarStyles from "../styles/menubar.module.css";
+import commonStyles from "@/app/styles/common_style.module.css"
 
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +13,7 @@ const Menubar = () => {
       <Container>
         <Nav className="mr-auto">
           <Link href="/">
-            <Image src="/logo.svg" alt="dynamic-logo" width={200} height={50} />
+            <Image src="/logo.svg" alt="dynamic-logo" width={200} height={50} className={commonStyles.imageWrapper} />
           </Link>
         </Nav>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

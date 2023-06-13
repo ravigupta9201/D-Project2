@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import styles from "../styles/footer.module.css"
 // import { Container } from "react-bootstrap"
-
+import commonStyles from "@/app/styles/common_style.module.css"
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
       <footer className={styles.footer_container}>
         <div className={styles.container}>
             <div className={styles.f_about}>
-                <Image src="/logo2.svg" alt="dynamic-logo" width={250} height={50} />
+                <Image src="/logo2.svg" alt="dynamic-logo" width={250} height={50} className={commonStyles.imageWrapper} />
                 <p>Lorem ipsum dolor sit amet consectetur. Viverra morbi a eu amet. Amet ut quis sed cursus gravida eu. Amet tellus eget massa eget velit ac. Nisi et tellus integer faucibus sollicitudin faucibus.Lorem ipsum dolor sit amet consectetur. Viverra morbi a eu amet. Amet ut quis sed cursus gravida eu. Amet tellus eget massa eget velit ac. Nisi et tellus integer faucibus sollicitudin faucibus.</p>
             </div>
 
@@ -48,7 +48,7 @@ const Footer = () => {
 
         <div className={styles.wave_svg}>
             <p>© Copyright 2022, Dynamicskills</p>
-            <Image src="/bottomstick.svg" alt="bottom stick" width={1420} height={10} />
+            <Image src="/bottomstick.svg" alt="bottom stick" width={1420} height={10} className={commonStyles.imageWrapper} />
         </div>
       </footer>
 
