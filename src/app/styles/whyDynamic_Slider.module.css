@@ -1,0 +1,17 @@
+.header{
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    color: #054F7E;
+    margin-top: 50px ;
+}
+
+
+@media (max-width: 768px){
+    .header {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: #054F7E;
+    }
+}

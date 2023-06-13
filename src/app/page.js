@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import Menubar from './components/Menubar'
 import Banner from './components/Banner'
 import AboutUs from './components/AboutUs'
 import Package_Card from './components/Package_Card'
@@ -12,7 +11,6 @@ import WhyDynamic_Card from './components/WhyDynamic_Card'
 
 
 import WhyDynamic_Slider from './components/WhyDynamic_Slider'
-import Footer from './components/Footer'
 import CenterModeCarousel from './components/CenterModeCarousel'
 import Testimonials from './components/Testimonials'
 
@@ -44,25 +42,18 @@ const page = () => {
 
   return (
     <div>
-      <Menubar />
+
       <Banner />
       <AboutUs />
-      {/* <Package_Card /> */}
+
       <TrainingSlider />
       
-      {/* <Container className='my-5' style={{ display: 'flex' , gap:"25px", }}>
-        <WhyDynamic_Card />
-        <WhyDynamic_Card />
-        <WhyDynamic_Card />
-      </Container> */}
 
       <WhyDynamic_Slider   />
 
-      {/* <Testimonials /> */}
-
       <CenterModeCarousel testimonials={testimonials} />
 
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
   )

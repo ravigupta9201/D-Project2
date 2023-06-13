@@ -1,3 +1,18 @@
-*{
+/* Box sizing rules */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li, ol {
+    list-style: none;
 }

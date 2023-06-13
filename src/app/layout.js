@@ -1,13 +1,17 @@
+"use client"
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 import './globals.css'
+import Menubar from './components/Menubar';
 
 
+import { Mulish  } from 'next/font/google'
+import Footer from './components/Footer';
+import Topbar from './components/Topbar';
 
 
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+const mulish = Mulish({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,7 +21,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={mulish.className}>
+        <Topbar />
+        <Menubar />
+          {children}
+        <Footer />
+      </body>
     </html>
   )
 }

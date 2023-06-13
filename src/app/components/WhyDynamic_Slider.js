@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import { Container } from "react-bootstrap";
 
 import WhyDynamic_Card from "./WhyDynamic_Card";
+import styles from "../styles/whyDynamic_Slider.module.css"
 
 const WhyDynamic_Slider = () => {
 
@@ -32,11 +33,10 @@ const WhyDynamic_Slider = () => {
             }
           },
           {
-            breakpoint: 550,
+            breakpoint: 760,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              initialSlide: 2
             }
           },
           {
@@ -50,9 +50,9 @@ const WhyDynamic_Slider = () => {
       };
 
   return (
-    <Container className="my-5">
-            <h2 style={{margin:"10px", color:"#034A74"}}>Why DynamicSkills</h2>
-        <Slider style={{display:"flex", justifyContent:"space-around", gap:"50px" }} {...settings}>
+    <Container>
+            <h2 className={styles.header}>Why DynamicSkills</h2>
+        <Slider {...settings}>
             <div>
                 <WhyDynamic_Card heading={"Highly experience instructor"} />
             </div>

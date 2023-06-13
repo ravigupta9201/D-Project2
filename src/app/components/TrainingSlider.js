@@ -11,6 +11,7 @@ import Package_Card from "./Package_Card";
 import { Container } from "react-bootstrap";
 
 import styles from "../styles/trainingSlider.module.css"
+import aboutStyles from "../styles/aboutUs.module.css"
 
 
 const TrainingSlider = () => {
@@ -57,8 +58,10 @@ const TrainingSlider = () => {
 
   return (
     <Container >
-        <h2 style={{margin:"10px", color:"#034A74"}}> Training </h2>
-        <p style={{margin:"10px", }}>Lorem ipsum dolor sit amt consectetur adipisicing elit. Dolores quia rerum natus voluptate voluptates odit ducimus consectetur voluptatem obcaecati, eligendi itaque quasi delectus at officiis quas porro unde aperiam ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia rerum natus voluptate voluptates.</p>
+        <div className={aboutStyles.desc} >
+          <h2> Training </h2>
+          <p>Lorem ipsum dolor sit amt consectetur adipisicing elit. Dolores quia rerum natus voluptate voluptates odit ducimus consectetur voluptatem obcaecati, eligendi itaque quasi delectus at officiis quas porro unde aperiam ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia rerum natus voluptate voluptates.</p>
+        </div>
         <Slider className={styles.slick_prev} {...settings}>
           <div>
             <Package_Card imageUrl={"/slider (1).png"} />

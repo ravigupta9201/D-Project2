@@ -1,7 +1,5 @@
 import {Container, Button, Row, Col} from "react-bootstrap";
-// import Button from "react-bootstrap/Button";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
+
 
 import styles from "../styles/aboutUs.module.css";
 import Image from "next/image";
@@ -10,9 +8,10 @@ import Link from "next/link";
 const AboutUs = () => {
   return (
     <>
-      <Container fluid>
-        <Row className={styles.container}>
-          <Col lg={6} md={12} sm={12}>
+      <div className={styles.container}>
+      <Container>
+        <Row>
+          <Col className={styles.desc} lg={6} md={12} sm={12}>
             <h2>Welcome to Dynamic Skills</h2>
             <p>
               Lorem ipsum dolor sit amt consectetur adipisicing elit. Dolores
@@ -23,16 +22,16 @@ const AboutUs = () => {
               voluptates odit ducimus consectetur voluptatem obcaecati, eligendi
               itaque quasi delectus at officiis quas porro unde aperiam ipsa.
             </p>
-            <Link href="#link">
+            <Link href="/about">
               <Button
                 variant="custom"
-                style={{ background: "#f48020", color: "white" }}
+                style={{ background: "#f48020", color: "white", padding: "8px 30px" }}
               >
-                Online Addmission
+                Read more
               </Button>
             </Link>
           </Col>
-          <Col lg={6} md={12} sm={12} className={styles.img_section}>
+          <Col lg={6} md={12} sm={12} >
             <Row >
               <Col>
               {/* className="img-fluid" */}
@@ -52,6 +51,7 @@ const AboutUs = () => {
           </Col>
         </Row>
       </Container>
+      </div>
     </>
   );
 };
