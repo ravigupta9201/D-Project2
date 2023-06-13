@@ -11,7 +11,12 @@ import Footer from './components/Footer';
 import Topbar from './components/Topbar';
 
 
-const mulish = Mulish({ subsets: ['latin'] })
+// const mulish = Mulish({ subsets: ['latin'] })
+const mulish = Mulish({
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+  display: 'swap'
+})
 
 export const metadata = {
   title: 'Create Next App',
