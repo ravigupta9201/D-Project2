@@ -1,4 +1,8 @@
 "use client"
+
+import React, { useEffect } from 'react';
+import initializeAOS from '../utils/aos';
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -24,6 +28,11 @@ const mulish = Mulish({
 // }
 
 export default function RootLayout({ children }) {
+
+  useEffect(() => {
+    initializeAOS();
+  }, []);
+
   return (
     <html lang="en">
       <body className={mulish.className}>

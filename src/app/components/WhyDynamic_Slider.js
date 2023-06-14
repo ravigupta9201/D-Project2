@@ -51,10 +51,10 @@ const WhyDynamic_Slider = () => {
 
   return (
     <Container>
-            <h2 className={styles.header}>Why DynamicSkills</h2>
-        <Slider {...settings}>
+            <h2 className={styles.header} data-aos="fade-up-right">Why DynamicSkills</h2>
+        <Slider {...settings} data-aos="fade-right">
             <div>
-                <WhyDynamic_Card heading={"Highly experience instructor"} />
+                <WhyDynamic_Card heading={"Highly experience instructor"}  />
             </div>
             <div>
                 <WhyDynamic_Card heading={"Wel experience Lab"} />

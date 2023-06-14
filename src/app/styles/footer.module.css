@@ -63,6 +63,11 @@
     padding-bottom: 20px;
 }
 
+.f_info address {
+    margin: auto;
+    color: white;
+}
+
 .wave_svg {
     background-color: #07527B;
    

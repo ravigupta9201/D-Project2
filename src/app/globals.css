@@ -1,3 +1,6 @@
+/* import 'aos/dist/aos.css'; */
+
+
 /* Box sizing rules */
 *,
 *::before,
@@ -16,3 +19,4 @@ a{
 ul, li, ol {
     list-style: none;
 }
+

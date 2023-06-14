@@ -1,4 +1,6 @@
 import { Container, Button, Row, Col } from "react-bootstrap";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 import styles from "../styles/aboutUs.module.css";
 import Image from "next/image";
@@ -11,8 +13,18 @@ const AboutUs = () => {
         <Container>
           <Row>
             <Col className={styles.desc} lg={6} md={6}>
-              <h2>Welcome to Dynamic Skills</h2>
-              <p>
+              <h2
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
+                Welcome to Dynamic Skills
+              </h2>
+              <p
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 Lorem ipsum dolor sit amt consectetur adipisicing elit. Dolores
                 quia rerum natus voluptate voluptates odit ducimus consectetur
                 voluptatem obcaecati, eligendi itaque quasi delectus at officiis
@@ -22,7 +34,8 @@ const AboutUs = () => {
                 eligendi itaque quasi delectus at officiis quas porro unde
                 aperiam ipsa.
               </p>
-              <Link href="/about">
+
+              <Link href="/about" data-aos="fade-up">
                 <Button
                   variant="custom"
                   style={{
@@ -35,11 +48,13 @@ const AboutUs = () => {
                 </Button>
               </Link>
             </Col>
-            <Col lg={6} md={6} >
-            {/* className={styles.imageWrapper} */}
-              <Row>
+            <Col lg={6} md={6}>
+              {/* className={styles.imageWrapper} */}
+
+              <Row data-aos="zoom-in">
                 <Col>
                   {/* className="img-fluid" */}
+
                   <Image
                     src="/img (1).png"
                     alt="about-section image"
@@ -50,7 +65,7 @@ const AboutUs = () => {
                 </Col>
               </Row>
 
-              <Row>
+              <Row data-aos="zoom-in">
                 <Col>
                   <Image
                     src="/img (2).png"

@@ -11,7 +11,7 @@ const WhyDynamic_Card = ({ heading }) => {
       
 
         <Container>
-          <Card className={styles.card}>
+          <Card className={styles.card} data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <div className={styles.heading}>
               <Image src="/badge.svg" alt="my-logo" width={25} height={25} className={commonStyles.imageWrapper} />
               <h5>{heading}</h5>

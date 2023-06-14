@@ -14,7 +14,7 @@ const carouselRef = useRef(null);
   };
 
   return (
-    <Container>
+    <Container data-aos="fade-up">
     <div className={styles.carouselContainer}>
       <h2 style={{color:"#07639c"}}>Our testimonials</h2>
       <div className={styles.carousel} ref={carouselRef}>

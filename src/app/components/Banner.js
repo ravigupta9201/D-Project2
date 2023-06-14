@@ -2,13 +2,14 @@ import { Container, Button, Row, Col } from "react-bootstrap";
 
 import styles from "../styles/banner.module.css";
 import Link from "next/link";
+import { Fade } from "react-reveal";
 
 const Banner = () => {
   return (
     <div className={styles.container}>
       <Container>
         <Row >
-          <Col className={styles.desc}  lg={6} md={12} sm={12}>
+          <Col className={styles.desc}  lg={6} md={12} sm={12}  data-aos="fade-right">
             <div>
               <p style={{ color: "#f48020" }}>A trusted digital agency</p>
               <h2>Quality Services,Your really want !</h2>

@@ -14,6 +14,7 @@ import styles from "../styles/trainingSlider.module.css"
 import aboutStyles from "../styles/aboutUs.module.css"
 
 
+
 const TrainingSlider = () => {
 
     const settings = {
@@ -58,11 +59,12 @@ const TrainingSlider = () => {
 
   return (
     <Container >
-        <div className={aboutStyles.desc} >
+        <div className={aboutStyles.desc} data-aos="fade-right">
           <h2> Training </h2>
           <p>Lorem ipsum dolor sit amt consectetur adipisicing elit. Dolores quia rerum natus voluptate voluptates odit ducimus consectetur voluptatem obcaecati, eligendi itaque quasi delectus at officiis quas porro unde aperiam ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia rerum natus voluptate voluptates.</p>
         </div>
-        <Slider className={styles.slick_prev} {...settings}>
+
+        <Slider className={styles.slick_prev} {...settings} >
           <div>
             <Package_Card imageUrl={"/slider (1).png"} />
           </div>
