@@ -2,7 +2,7 @@ import { Container, Button, Row, Col } from "react-bootstrap";
 
 import styles from "../styles/banner.module.css";
 import Link from "next/link";
-import { Fade } from "react-reveal";
+
 
 const Banner = () => {
   return (

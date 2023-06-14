@@ -1,6 +1,5 @@
 import { Container, Button, Row, Col } from "react-bootstrap";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
+
 
 import styles from "../styles/aboutUs.module.css";
 import Image from "next/image";
