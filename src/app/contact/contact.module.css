@@ -1,0 +1,60 @@
+
+
+.grid_two_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+
+
+.form{
+    position: relative;
+}
+
+.textbox{
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    padding: 10px;
+    margin: 8px 0px;
+    color: red;
+    width: 100%;
+}
+
+.form_label{
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms;
+    color: red;
+}
+
+.textbox:focus{
+    border: 2px solid red;
+    
+}
+
+.textbox:focus ~ .form_label , 
+.textbox:not(:placeholder-shown).textbox:not(:focus)~.form_label
+{
+    top: -3px;
+    left: 12px;
+    font-size: 14px;
+    padding: 0px 5px;
+    background-color: white;
+    
+}
+
+
+
+
+/* .textbox:focus ~ .form_label {
+    top: -12px;
+    left: 5px;
+    font-size: 15px;
+    background-color: white;
+} */

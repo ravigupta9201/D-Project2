@@ -48,7 +48,7 @@ const page = () => {
 
       <TrainingSlider />
       
-
+      {/* <WhyDynamic_Card /> */}
       <WhyDynamic_Slider   />
 
       <CenterModeCarousel testimonials={testimonials} />

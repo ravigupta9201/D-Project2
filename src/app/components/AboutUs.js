@@ -1,11 +1,18 @@
+"use client"
+
 import { Container, Button, Row, Col } from "react-bootstrap";
 
 
 import styles from "../styles/aboutUs.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
-const AboutUs = () => {
+const AboutUs = ({children, showButton = true }) => {
+
+  // Boolean [showButton, setShowButton] = useState(true)
+
+
   return (
     <>
       <div className={styles.container}>
@@ -34,18 +41,14 @@ const AboutUs = () => {
                 aperiam ipsa.
               </p>
 
-              <Link href="/about" data-aos="fade-up">
-                <Button
-                  variant="custom"
-                  style={{
-                    background: "#f48020",
-                    color: "white",
-                    padding: "8px 30px",
-                  }}
-                >
-                  Read more
+              { showButton &&  <Link href="/about" data-aos="fade-up">
+                <Button variant="custom" style={{ background: "#f48020", color: "white", padding: "8px 30px",}}>
+                    Read more
                 </Button>
-              </Link>
+              </Link> }
+
+              
+              
             </Col>
             <Col lg={6} md={6}>
               {/* className={styles.imageWrapper} */}
@@ -86,6 +89,8 @@ const AboutUs = () => {
               </Row>
             </Col>
           </Row>
+
+          <div>{children}</div>
         </Container>
       </div>
     </>

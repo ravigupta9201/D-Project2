@@ -8,7 +8,8 @@ import Link from 'next/link';
 const Package_Card = ({imageUrl}) => {
   return (
     <Container>
-    <Card data-aos="fade-down">
+      {/* data-aos="fade-down" */}
+    <Card >
       <Card.Img variant="top" src={imageUrl} alt='card' height={250} />
       <Card.Body>
         <p>Mobile reparing</p>

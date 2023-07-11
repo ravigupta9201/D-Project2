@@ -1,0 +1,36 @@
+.card_container {
+    padding: 20px 15px;
+    background-color: whitesmoke;
+    /* box-shadow: 0px 10px 18px 10px whitesmoke; */
+    box-shadow:  rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border: none;
+    /* position: relative; */
+}
+
+.card_container p {
+    font-size: 15px;
+    letter-spacing: 0.04rem;
+    line-height: 1.3rem;
+}
+
+
+  
+  .circle_top {
+    width: 120.25px;
+    height: 122.98px;
+    border-radius: 60.1249px 0px 60.1249px 60.1249px;
+    transform: rotate(-90deg);
+    background-color: red;
+    opacity: 0.3;
+    z-index: 1;
+  }
+  
+  .circle_bottom {
+    width: 120.25px;
+    height: 122.98px;
+    border-radius: 60.1249px 0px 60.1249px 60.1249px;
+    /* transform: translateX(-50%); */
+    background-color: blue; 
+    opacity: 0.3;
+  }
+  

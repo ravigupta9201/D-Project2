@@ -6,3 +6,7 @@
     width: auto;
     height: auto;
 }
+
+.grid_two_section{
+    display: grid;
+}

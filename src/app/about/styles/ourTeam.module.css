@@ -1,0 +1,13 @@
+.container {
+    /* margin: 20px auto; */
+
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+}
+
+.card_section{
+    /* display: flex; */
+    /* width: 100%; */
+    /* flex-wrap: wrap; */
+}

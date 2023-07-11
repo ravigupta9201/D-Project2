@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card_section{
+    max-width: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 5px 5px whitesmoke;
+}
+
+.card_section p {
+    font-size: 15px;
+    letter-spacing: 0.04rem;
+    line-height: 1.3rem;
+}
+
+.card_profile {
+    display: flex;
+}
+
+.card_profile h4{
+    margin: 0px;
+}
