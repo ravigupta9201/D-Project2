@@ -18,13 +18,13 @@ const Placement = () => {
           <h2 style={{color:"#054F7E", marginBottom:"50px"}}>Our Placement Partner</h2>
             {placement_apiData.map((cardApi)=> (
              
-                <Col lg ={2} md={3} sm={4} xs={6} className="py-2">
-                <div>
-                  <div key={cardApi.id} className={styles.img_container}>
+                <Col key={cardApi.id} lg ={2} md={3} sm={4} xs={6} className="py-2">
+                
+                  <div  className={styles.img_container}>
                     <Image src={cardApi.imageUrl} alt={"placement img"} width={80} height={40} ></Image>
                     <p className={styles.logo_title}>{cardApi.logoTitle}</p>
                   </div>
-                </div>
+            
                 </Col>
              
             )) }
